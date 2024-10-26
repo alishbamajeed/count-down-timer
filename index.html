@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Countdown Timer</h1>
+        <div class="input-container">
+            <input type="number" id="minutesInput" placeholder="Enter minutes" min="1">
+            <button onclick="startTimer()">Set Timer</button>
+        </div>
+        <div class="timer">
+            <svg>
+                <circle cx="80" cy="80" r="70"></circle>
+                <circle cx="80" cy="80" r="70" id="progress-circle"></circle>
+            </svg>
+            <div class="time-display">
+                <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
